@@ -14,6 +14,10 @@ body {
     @apply font-sans bg-neutral-950 text-white selection:bg-cyan-500/30 selection:text-white antialiased overflow-x-hidden;
 }
 
+header{
+    backdrop-filter: blur(16px);
+}
+
 .glass {
     background: rgba(23, 23, 23, 0.45);
     backdrop-filter: blur(16px);

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import { BookOpen, Coffee, Heart, User, Zap } from "lucide-react";
 import { PERSONAL_INFO } from "../data";
 
@@ -32,7 +32,7 @@ export default function About() {
         },
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: {
             opacity: 1,

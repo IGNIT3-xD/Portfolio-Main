@@ -116,11 +116,11 @@ export default function Navbar({ activeSection }: NavbarProps) {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.25, ease: "easeInOut" }}
-                        className="absolute top-20 left-0 w-full md:hidden border-b border-white/10 bg-neutral-950/98 backdrop-blur-xl overflow-hidden shadow-2xl z-50"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        className="absolute top-20 left-0 w-full md:hidden border-b border-white/10 bg-neutral-950/98 backdrop-blur-xl shadow-2xl z-50"
                     >
                         <div className="px-6 py-6 flex flex-col gap-4">
                             {navItems.map((item) => (

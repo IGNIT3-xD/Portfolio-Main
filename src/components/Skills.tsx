@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import {
     Cpu,
     Layout,
@@ -122,7 +122,7 @@ export default function Skills() {
         }
     };
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: {},
         visible: {
             transition: {
@@ -131,7 +131,7 @@ export default function Skills() {
         },
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
             opacity: 1,

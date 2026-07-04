@@ -50,7 +50,7 @@ export default function Contact() {
 
     return (
         <section id="contact" className="py-24 px-6 relative">
-            <div className="max-w-6xl mx-auto relative z-10">
+            <div className="max-w-6xl mx-auto relative -z-10">
 
                 {/* Section Title */}
                 <div className="flex flex-col gap-2 mb-16 text-center">

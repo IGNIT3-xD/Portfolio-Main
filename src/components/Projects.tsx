@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, type Variants } from "motion/react";
 import { FolderGit2, ArrowUpRight, ExternalLink, X, Info, Sparkles } from "lucide-react";
 import { PROJECTS_DATA } from "../data";
 import type { Project } from "../types";
@@ -37,7 +37,7 @@ export default function Projects() {
         },
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: {
             opacity: 1,
@@ -182,7 +182,7 @@ export default function Projects() {
                                 exit={{ scale: 0.95, y: 15 }}
                                 onClick={(e) => e.stopPropagation()}
                                 transition={{ type: "spring", duration: 0.5 }}
-                                className="relative z-10 w-full max-w-3xl max-h-[75vh] bg-neutral-900/95 border-2 border-blue-500/20 rounded-2xl shadow-[0_0_40px_rgba(239,68,68,0.25)] overflow-hidden flex flex-col cursor-default top-5"
+                                className="relative z-100 w-full max-w-3xl max-h-[75vh] bg-neutral-900/95 border-2 border-blue-500/20 rounded-2xl shadow-[0_0_40px_rgba(239,68,68,0.25)] overflow-hidden flex flex-col cursor-default top-5"
                             >
                                 {/* Modal Header */}
                                 <div className="px-6 py-4 border-b border-red-500/20 flex items-center justify-between bg-neutral-950/60 shrink-0">
